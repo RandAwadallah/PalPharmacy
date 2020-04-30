@@ -21,13 +21,23 @@
             app:expandedTitleMarginEnd="64dp"
             app:expandedTitleMarginStart="48dp"
             app:layout_scrollFlags="exitUntilCollapsed|scroll"
-            app:title="Anime Title">
+            app:title="Anime Title"
+            android:background="@color/colorBlue">
+
+<!--            <Button-->
+<!--                android:layout_marginLeft="250dp"-->
+<!--                 android:layout_marginTop="220dp"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:text="click to show location"/>-->
 
             <android.support.v7.widget.Toolbar
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:theme="@style/ThemeOverlay.AppCompat.Light"
-                app:layout_collapseMode="pin"></android.support.v7.widget.Toolbar>
+                app:layout_collapseMode="pin">
+
+            </android.support.v7.widget.Toolbar>
 
 
             <LinearLayout
@@ -44,58 +54,16 @@
                     android:layout_height="150dp"
                     android:background="@drawable/loading_shape" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    android:layout_margin="8dp"
-                    android:orientation="vertical">
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="130dp"-->
+<!--                    android:layout_margin="8dp"-->
+<!--                    android:orientation="vertical">-->
 
 
-                    <TextView
-                        android:id="@+id/aa_anime_name"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Anime Title"
-                        android:textColor="@color/colorBlue"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/aa_categorie"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="7dp"
-                        android:text="Opening_Time:" />
-
-                    <TextView
-                        android:id="@+id/aa_rating"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:text="Closing_Time:" />
 
 
-<!--                    <TextView-->
-<!--                        android:id="@+id/aa_rating"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_marginTop="10dp"-->
-<!--                        android:background="@drawable/rating_background"-->
-<!--                        android:drawableLeft="@drawable/ic_star_black_24dp"-->
-<!--                        android:paddingRight="5dp"-->
-<!--                        android:text="0.0"-->
-<!--                        android:textColor="#fff"-->
-<!--                        android:textSize="15sp"-->
-<!--                        android:textStyle="bold" />-->
-                    <TextView
-                        android:id="@+id/aa_studio"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:text="Phone Number:" />
-
-
-                </LinearLayout>
+<!--                </LinearLayout>-->
 
 
             </LinearLayout>
@@ -110,14 +78,180 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="16dp"
+        android:background="@color/white"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <TextView
-            android:id="@+id/aa_description"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Anime Description"
-            android:textColor="#999999" />
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="620dp"
+                app:cardCornerRadius="10dp"
+                android:background="@color/white">
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/owner"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="60dp"
+                    android:text="Owner :"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="130dp"
+                    android:text="Fidaa"
+                    android:textColor="#FB5A5A5A"
+                    android:textSize="20sp"
+                    android:textStyle="normal"/>
+
+
+                <ImageView
+                    android:layout_marginTop="60dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/open"/>
+
+                <TextView
+                    android:layout_marginTop="60dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="60dp"
+                    android:text="Opens at (AM) :" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="120dp"
+                    android:src="@drawable/close"/>
+
+                <TextView
+                    android:layout_marginTop="120dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="60dp"
+                    android:text="Closes at (PM) :" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="180dp"
+                    android:src="@drawable/vacatin"/>
+
+                <TextView
+                    android:layout_marginTop="180dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="60dp"
+                    android:text="Vacation :" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="240dp"
+                    android:src="@drawable/phone"/>
+
+                <TextView
+                    android:layout_marginTop="240dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="60dp"
+                    android:text="Phone Number :" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="300dp"
+                    android:src="@drawable/city"/>
+
+                <TextView
+                    android:layout_marginTop="300dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="60dp"
+                    android:text="Region :" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="360dp"
+                    android:src="@drawable/city"/>
+                <TextView
+                    android:layout_marginTop="360dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="60dp"
+                    android:text="Governorate :" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="420dp"
+                    android:src="@drawable/city"/>
+                <TextView
+                    android:layout_marginTop="420dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="60dp"
+                    android:text="City :" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="480dp"
+                    android:src="@drawable/city"/>
+                <TextView
+                    android:layout_marginTop="480dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="60dp"
+                    android:text="Address :" />
+
+                <Button
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="540dp"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:text="click to show location"/>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>
 

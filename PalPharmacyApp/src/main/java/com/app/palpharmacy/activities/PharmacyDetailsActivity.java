@@ -50,9 +50,9 @@ public class PharmacyDetailsActivity extends AppCompatActivity  {
 //        TextView tv_description = findViewById(R.id.aa_description);
 //        TextView tv_rating = findViewById(R.id.aa_rating);
 //        ImageView img = findViewById(R.id.aa_thumbnail);
-        TextView tv_name = findViewById(R.id.aa_anime_name);
+       // TextView tv_name = findViewById(R.id.aa_anime_name);
         TextView tv_city = findViewById(R.id.city);
-        TextView tv_description = findViewById(R.id.aa_description);
+      //  TextView tv_description = findViewById(R.id.aa_description);
         ImageView img = findViewById(R.id.aa_thumbnail);
 
         // setting values to each view
@@ -62,9 +62,9 @@ public class PharmacyDetailsActivity extends AppCompatActivity  {
        // tv_description.setText(description);
        // tv_rating.setText(rating);
        // tv_studio.setText(studio);
-        tv_name.setText(name);
+       // tv_name.setText(name);
 //        tv_city.setText(city);
-        tv_description.setText(description);
+    //    tv_description.setText(description);
 
         collapsingToolbarLayout.setTitle(name);
 
