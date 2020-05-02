@@ -31,7 +31,7 @@
         android:gravity="center"
         android:text="Pal-Pharmacy is a complete system that helps pharmacists to promote for their pharmacy while providing the customers an easy and effective way to look for the nearest pharmacy based on their current location."
         android:textColor="@color/black"
-        android:textSize="24dp"
+        android:textSize="18sp"
         android:textStyle="bold|italic" />
 
 

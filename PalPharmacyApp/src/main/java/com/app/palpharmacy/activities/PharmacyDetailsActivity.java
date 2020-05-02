@@ -14,6 +14,7 @@ import com.bumptech.glide.request.RequestOptions;
 
 public class PharmacyDetailsActivity extends AppCompatActivity  {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

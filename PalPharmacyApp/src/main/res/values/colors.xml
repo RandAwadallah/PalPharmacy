@@ -5,7 +5,7 @@
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorGrey">#ccc</color>
     <color name="colorGrey1">#666</color>
-    <color name="colorBlue">@android:color/holo_blue_dark</color>
+    <color name="colorBlue">#0731A3</color>
     <color name="card_bg_dark_color">#0e0e0e</color>
     <color name="content_text_color">#999da4</color>
 

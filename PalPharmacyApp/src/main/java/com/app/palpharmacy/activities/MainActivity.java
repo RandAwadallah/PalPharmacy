@@ -1,5 +1,6 @@
 package com.app.palpharmacy.activities;
 
+import android.app.Fragment;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Handler;
@@ -27,8 +28,10 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.Network;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -42,7 +45,9 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -58,13 +63,22 @@ private static int splashtime= 4000;
     List<Pharmacy> mData;
 
 
+
     private DrawerLayout drawer;
     RecyclerViewAdapter myadapter;
      EditText searchinput;
+    TextView textView ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+       textView = findViewById(R.id.textView);
+       Calendar calender = Calendar.getInstance();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("hh:mm:ss");
+       String dateTime =simpleDateFormat.format(Calendar.getInstance().getTime());
+      // textView.setText("open now");
 
         // ini view
         fabSwitcher = findViewById(R.id.fab_switcher);
@@ -110,15 +124,16 @@ toggle.syncState();
                     try {
                         jsonObject = response.getJSONObject(i) ;
                         Pharmacy pharmacy = new Pharmacy() ;
-                        pharmacy.setName(jsonObject.getString("name_en"));
-                        pharmacy.setDescription(jsonObject.getString("address"));
-                        pharmacy.setCity(jsonObject.getString("city_id"));
+                        pharmacy.setName(jsonObject.getString("pharmacy_name_en"));
+                     //   pharmacy.setDescription(jsonObject.getString("address"));
+                        pharmacy.setCity(jsonObject.getString("city_name"));
 
 //                        pharmacy.setRating(jsonObject.getString("Rating"));
 //                        pharmacy.setCategorie(jsonObject.getString("categorie"));
 //                        pharmacy.setNb_episode(jsonObject.getInt("episode"));
 //                        pharmacy.setStudio(jsonObject.getString("studio"));
                         pharmacy.setImage_url(jsonObject.getString("image"));
+
                         lstPharmacy.add(pharmacy);
 
                     } catch (JSONException e) {
@@ -209,6 +224,8 @@ searchinput.addTextChangedListener(new TextWatcher() {
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        Fragment fragment = null;
+        Class fragmentClass;
         switch (item.getItemId()){
             case R.id.nav_aboutus:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new aboutusfragment()).commit();
@@ -222,6 +239,8 @@ searchinput.addTextChangedListener(new TextWatcher() {
             case R.id.nav_location:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new locationfragment()).commit();
                 break;
+            default:
+                fragmentClass = Network.class;
 
 
         }

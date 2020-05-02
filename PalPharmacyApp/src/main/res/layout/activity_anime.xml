@@ -35,12 +35,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:theme="@style/ThemeOverlay.AppCompat.Light"
-                app:layout_collapseMode="pin">
+                app:layout_collapseMode="pin"
+                android:background="@color/colorBlue">
 
             </android.support.v7.widget.Toolbar>
 
 
             <LinearLayout
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -48,6 +50,7 @@
 
 
                 <ImageView
+                    android:layout_marginTop="20dp"
                     android:id="@+id/aa_thumbnail"
                     android:layout_marginRight="10dp"
                     android:layout_width="150dp"
@@ -100,6 +103,7 @@
                     />
 
                 <TextView
+                    android:id="@+id/owner"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_marginLeft="60dp"
@@ -109,11 +113,11 @@
                     android:textStyle="bold"/>
 
                 <TextView
-
+                     android:id="@+id/textOwner"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_marginLeft="130dp"
-                    android:text="Fidaa"
+                    android:text=""
                     android:textColor="#FB5A5A5A"
                     android:textSize="20sp"
                     android:textStyle="normal"/>
@@ -126,6 +130,7 @@
                     android:src="@drawable/open"/>
 
                 <TextView
+                    android:id="@+id/open"
                     android:layout_marginTop="60dp"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
@@ -135,6 +140,17 @@
                     android:layout_marginLeft="60dp"
                     android:text="Opens at (AM) :" />
 
+                <TextView
+                    android:id="@+id/textOpen"
+                    android:layout_marginTop="60dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="200dp"
+                    android:text="Fidaa"
+                    android:textColor="#FB5A5A5A"
+                    android:textSize="20sp"
+                    android:textStyle="normal"/>
+
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
@@ -142,6 +158,7 @@
                     android:src="@drawable/close"/>
 
                 <TextView
+                    android:id="@+id/close"
                     android:layout_marginTop="120dp"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
@@ -151,6 +168,18 @@
                     android:layout_marginLeft="60dp"
                     android:text="Closes at (PM) :" />
 
+                <TextView
+                    android:id="@+id/textClose"
+                    android:layout_marginTop="120dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="200dp"
+                    android:text="Fidaa"
+                    android:textColor="#FB5A5A5A"
+                    android:textSize="20sp"
+                    android:textStyle="normal"/>
+
+
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
@@ -158,6 +187,7 @@
                     android:src="@drawable/vacatin"/>
 
                 <TextView
+                    android:id="@+id/vacation"
                     android:layout_marginTop="180dp"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
@@ -167,6 +197,17 @@
                     android:layout_marginLeft="60dp"
                     android:text="Vacation :" />
 
+                <TextView
+                    android:id="@+id/textVacation"
+                    android:layout_marginTop="180dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="150dp"
+                    android:text="Fidaa"
+                    android:textColor="#FB5A5A5A"
+                    android:textSize="20sp"
+                    android:textStyle="normal"/>
+
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
@@ -174,6 +215,7 @@
                     android:src="@drawable/phone"/>
 
                 <TextView
+                    android:id="@+id/phone_number"
                     android:layout_marginTop="240dp"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
@@ -183,6 +225,17 @@
                     android:layout_marginLeft="60dp"
                     android:text="Phone Number :" />
 
+                <TextView
+                    android:id="@+id/textPhone"
+                    android:layout_marginTop="240dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="200dp"
+                    android:text="Fidaa"
+                    android:textColor="#FB5A5A5A"
+                    android:textSize="20sp"
+                    android:textStyle="normal"/>
+
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
@@ -190,6 +243,7 @@
                     android:src="@drawable/city"/>
 
                 <TextView
+                    android:id="@+id/region"
                     android:layout_marginTop="300dp"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
@@ -199,12 +253,25 @@
                     android:layout_marginLeft="60dp"
                     android:text="Region :" />
 
+                <TextView
+                    android:id="@+id/textRegion"
+                    android:layout_marginTop="300dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="140dp"
+                    android:text="Fidaa"
+                    android:textColor="#FB5A5A5A"
+                    android:textSize="20sp"
+                    android:textStyle="normal"/>
+
+
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginTop="360dp"
                     android:src="@drawable/city"/>
                 <TextView
+                    android:id="@+id/governorate"
                     android:layout_marginTop="360dp"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
@@ -214,12 +281,24 @@
                     android:layout_marginLeft="60dp"
                     android:text="Governorate :" />
 
+                <TextView
+                    android:id="@+id/texrGovernorate"
+                    android:layout_marginTop="360dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="180dp"
+                    android:text="Fidaa"
+                    android:textColor="#FB5A5A5A"
+                    android:textSize="20sp"
+                    android:textStyle="normal"/>
+
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginTop="420dp"
                     android:src="@drawable/city"/>
                 <TextView
+                    android:id="@+id/city"
                     android:layout_marginTop="420dp"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
@@ -229,12 +308,24 @@
                     android:layout_marginLeft="60dp"
                     android:text="City :" />
 
+                <TextView
+                    android:id="@+id/textCity"
+                    android:layout_marginTop="420dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="110dp"
+                    android:text="Fidaa"
+                    android:textColor="#FB5A5A5A"
+                    android:textSize="20sp"
+                    android:textStyle="normal"/>
+
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginTop="480dp"
                     android:src="@drawable/city"/>
                 <TextView
+                    android:id="@+id/address"
                     android:layout_marginTop="480dp"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
@@ -243,6 +334,16 @@
                     android:textStyle="bold"
                     android:layout_marginLeft="60dp"
                     android:text="Address :" />
+                <TextView
+                    android:id="@+id/textAddress"
+                    android:layout_marginTop="480dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="150dp"
+                    android:text="Fidaa"
+                    android:textColor="#FB5A5A5A"
+                    android:textSize="20sp"
+                    android:textStyle="normal"/>
 
                 <Button
                     android:layout_marginLeft="70dp"
