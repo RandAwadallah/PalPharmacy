@@ -125,13 +125,10 @@ toggle.syncState();
                         jsonObject = response.getJSONObject(i) ;
                         Pharmacy pharmacy = new Pharmacy() ;
                         pharmacy.setName(jsonObject.getString("pharmacy_name_en"));
-                     //   pharmacy.setDescription(jsonObject.getString("address"));
                         pharmacy.setCity(jsonObject.getString("city_name"));
-
-//                        pharmacy.setRating(jsonObject.getString("Rating"));
-//                        pharmacy.setCategorie(jsonObject.getString("categorie"));
-//                        pharmacy.setNb_episode(jsonObject.getInt("episode"));
-//                        pharmacy.setStudio(jsonObject.getString("studio"));
+                        pharmacy.setGovernorate(jsonObject.getString("gov_name"));
+                        pharmacy.setOwner(jsonObject.getString("owner"));
+                        pharmacy.setOpens(jsonObject.getString("opening_time"));
                         pharmacy.setImage_url(jsonObject.getString("image"));
 
                         lstPharmacy.add(pharmacy);

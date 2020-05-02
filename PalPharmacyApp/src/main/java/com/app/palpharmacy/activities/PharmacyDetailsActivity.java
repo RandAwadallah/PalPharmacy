@@ -25,18 +25,11 @@ public class PharmacyDetailsActivity extends AppCompatActivity  {
         getSupportActionBar().hide();
 
         // Recieve data
-
-       // String name = getIntent().getExtras().getString("anime_name");
-        //String description = getIntent().getExtras().getString("anime_description");
-      //  String studio = getIntent().getExtras().getString("anime_studio");
-      //  String category = getIntent().getExtras().getString("anime_category");
-       // int nb_episode = getIntent().getExtras().getInt("anime_nb_episode");
-     //   String rating = getIntent().getExtras().getString("anime_rating");
-       // String image_url = getIntent().getExtras().getString("anime_img");
-        String name = getIntent().getExtras().getString("anime_name");
-        String description = getIntent().getExtras().getString("anime_description");
-        String city = getIntent().getExtras().getString("anime_city");
-        int nb_episode = getIntent().getExtras().getInt("anime_nb_episode");
+        String name = getIntent().getExtras().getString("name");
+        String city = getIntent().getExtras().getString("city");
+        String governorate = getIntent().getExtras().getString("governorate");
+        String owner = getIntent().getExtras().getString("owner");
+        String opens = getIntent().getExtras().getString("opens");
         String image_url = getIntent().getExtras().getString("anime_img");
 
 
@@ -45,28 +38,17 @@ public class PharmacyDetailsActivity extends AppCompatActivity  {
         CollapsingToolbarLayout collapsingToolbarLayout = findViewById(R.id.collapsingtoolbar_id);
         collapsingToolbarLayout.setTitleEnabled(true);
 //
-//        TextView tv_name = findViewById(R.id.aa_anime_name);
-//        TextView tv_studio = findViewById(R.id.aa_studio);
-//        TextView tv_categorie = findViewById(R.id.aa_categorie);
-//        TextView tv_description = findViewById(R.id.aa_description);
-//        TextView tv_rating = findViewById(R.id.aa_rating);
-//        ImageView img = findViewById(R.id.aa_thumbnail);
-       // TextView tv_name = findViewById(R.id.aa_anime_name);
-        TextView tv_city = findViewById(R.id.city);
-      //  TextView tv_description = findViewById(R.id.aa_description);
+        TextView textOwner = findViewById(R.id.textOwner);
+        TextView textOpen = findViewById(R.id.textOpen);
+        TextView textGovernorate = findViewById(R.id.textGovernorate);
+        TextView textCity = findViewById(R.id.textCity);
         ImageView img = findViewById(R.id.aa_thumbnail);
 
         // setting values to each view
-
-      //  tv_name.setText(name);
-      //  tv_categorie.setText(category);
-       // tv_description.setText(description);
-       // tv_rating.setText(rating);
-       // tv_studio.setText(studio);
-       // tv_name.setText(name);
-//        tv_city.setText(city);
-    //    tv_description.setText(description);
-
+        textOwner.setText(owner);
+        textOpen.setText(opens);
+        textCity.setText(city);
+        textGovernorate.setText(governorate);
         collapsingToolbarLayout.setTitle(name);
 
 

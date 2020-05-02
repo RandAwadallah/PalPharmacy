@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AndroidStudioProjects-ourseminar.iml" filepath="$PROJECT_DIR$/AndroidStudioProjects-ourseminar.iml" group="ourseminar" />
-      <module fileurl="file://$PROJECT_DIR$/PalPharmacyApp/AndroidStudioProjects-ourseminar-PalPharmacyApp.iml" filepath="$PROJECT_DIR$/PalPharmacyApp/AndroidStudioProjects-ourseminar-PalPharmacyApp.iml" group="ourseminar/PalPharmacyApp" />
-      <module fileurl="file://$PROJECT_DIR$/MyApplication5-m.iml" filepath="$PROJECT_DIR$/MyApplication5-m.iml" group="MyApplication5-m" />
-      <module fileurl="file://$PROJECT_DIR$/PalPharmacyApp/MyApplication5-m-PalPharmacyApp.iml" filepath="$PROJECT_DIR$/PalPharmacyApp/MyApplication5-m-PalPharmacyApp.iml" group="MyApplication5-m/PalPharmacyApp" />
-      <module fileurl="file://$PROJECT_DIR$/MyApplication5-master.iml" filepath="$PROJECT_DIR$/MyApplication5-master.iml" />
-      <module fileurl="file://$PROJECT_DIR$/PalPharmacyApp/MyApplication5-master-PalPharmacyApp.iml" filepath="$PROJECT_DIR$/PalPharmacyApp/MyApplication5-master-PalPharmacyApp.iml" group="MyApplication5-master/PalPharmacyApp" />
       <module fileurl="file://$PROJECT_DIR$/PalPharmacyApp/PalPharmacyApp.iml" filepath="$PROJECT_DIR$/PalPharmacyApp/PalPharmacyApp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/StudioProjects-MyApplication5-master.iml" filepath="$PROJECT_DIR$/StudioProjects-MyApplication5-master.iml" group="MyApplication5-master" />
-      <module fileurl="file://$PROJECT_DIR$/oursem.iml" filepath="$PROJECT_DIR$/oursem.iml" group="oursem" />
-      <module fileurl="file://$PROJECT_DIR$/PalPharmacyApp/oursem-PalPharmacyApp.iml" filepath="$PROJECT_DIR$/PalPharmacyApp/oursem-PalPharmacyApp.iml" group="oursem/PalPharmacyApp" />
       <module fileurl="file://$PROJECT_DIR$/ourseminar.iml" filepath="$PROJECT_DIR$/ourseminar.iml" group="ourseminar" />
-      <module fileurl="file://$PROJECT_DIR$/PalPharmacyApp/ourseminar-PalPharmacyApp.iml" filepath="$PROJECT_DIR$/PalPharmacyApp/ourseminar-PalPharmacyApp.iml" group="ourseminar/PalPharmacyApp" />
-      <module fileurl="file://$PROJECT_DIR$/ourseminarr.iml" filepath="$PROJECT_DIR$/ourseminarr.iml" group="ourseminarr" />
-      <module fileurl="file://$PROJECT_DIR$/PalPharmacyApp/ourseminarr-PalPharmacyApp.iml" filepath="$PROJECT_DIR$/PalPharmacyApp/ourseminarr-PalPharmacyApp.iml" group="ourseminarr/PalPharmacyApp" />
-      <module fileurl="file://$PROJECT_DIR$/randd.iml" filepath="$PROJECT_DIR$/randd.iml" group="randd" />
-      <module fileurl="file://$PROJECT_DIR$/PalPharmacyApp/randd-PalPharmacyApp.iml" filepath="$PROJECT_DIR$/PalPharmacyApp/randd-PalPharmacyApp.iml" group="randd/PalPharmacyApp" />
     </modules>
   </component>
 </project>

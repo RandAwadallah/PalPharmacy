@@ -7,25 +7,21 @@ package com.app.palpharmacy.model;
 public class Pharmacy {
 
     private String name;
-    private String Description;
-    private String rating;
-    private int nb_episode;
-    private String categorie;
-    private String studio;
+    private String owner;
+    private String opens;
     private String image_url;
     private String city;
+    private String governorate;
     public Pharmacy() {
     }
 
-    public Pharmacy(String name, String description, String city ,String rating, int nb_episode, String categorie, String studio, String image_url) {
+    public Pharmacy(String name, String city, String governorate  ,String owner,  String opens, String image_url) {
         this.name = name;
-        Description = description;
-        this.rating = rating;
-        this.nb_episode = nb_episode;
-        this.categorie = categorie;
-        this.studio = studio;
+        this.owner = owner;
+        this.opens = opens;
         this.image_url = image_url;
         this.city = city;
+        this.governorate = governorate;
 
     }
 
@@ -39,14 +35,6 @@ public class Pharmacy {
         this.name = name;
     }
 
-    public String getDescription() {
-        return Description;
-    }
-
-    public void setDescription(String description) {
-        Description = description;
-    }
-
     public String getCity() {
         return city;
     }
@@ -55,29 +43,20 @@ public class Pharmacy {
         this.city = city;
     }
 
-
-    public int getNb_episode() {
-        return nb_episode;
+    public String getGovernorate() {
+        return governorate;
     }
 
-    public void setNb_episode(int nb_episode) {
-        this.nb_episode = nb_episode;
+    public void setGovernorate(String governorate) {
+        this.governorate = governorate;
     }
 
-    public String getCategorie() {
-        return categorie;
+    public String getOpens() {
+        return opens;
     }
 
-    public void setCategorie(String categorie) {
-        this.categorie = categorie;
-    }
-
-    public String getStudio() {
-        return studio;
-    }
-
-    public void setStudio(String studio) {
-        this.studio = studio;
+    public void setOpens(String studio) {
+        this.opens = opens;
     }
 
     public String getImage_url() {
@@ -86,5 +65,13 @@ public class Pharmacy {
 
     public void setImage_url(String image_url) {
         this.image_url = image_url;
+    }
+
+    public String getOwner() {
+        return owner;
+    }
+
+    public void setOwner(String owner) {
+        this.owner = owner;
     }
 }
